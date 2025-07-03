@@ -74,7 +74,8 @@ header nav a:hover {
 }
 
 div img:hover {
-    border: 3px #4CC9F0 solid;
+    border: 3px #ff71b1 solid;
+    transform: scale(.9);
 }
 
 #headerColorChange {
@@ -132,16 +133,30 @@ color: #4361EE;
             font-size: 50px;
              text-align: center;
 }
+
+#h2Top {
     
+    color: #F1F1F1;
+    background-color: #AB48EC;
+        width: 27%;
+        margin: auto;
+         margin-top: 35px ;
+          margin-bottom: 30px;
+            padding: 20px;
+             border-radius: 25px;
+}
+   
+
     
 h2 {
     margin: 0px 0px 30px 0px;
-    color: #4361EE;
+    color: #F72585;
     font-family: "gelica", sans-serif;
      font-weight: 400;
       font-style: normal;
-            font-size: 30px;
+            font-size: 35px;
                 text-decoration: underline;
+                text-align: center;
 }
     
 h3 {
@@ -150,6 +165,13 @@ h3 {
         font-variation-settings: 'wght' 450, 'slnt' -6;
             text-align: center
         
+}
+
+h4 {
+ font-family: "ivysoft-variable", sans-serif;
+ font-variation-settings: "slnt" 0, "wght" 400;
+    font-size: 20px;
+    margin: 20px;
 }
 
 
@@ -166,7 +188,43 @@ p em {
     font-variation-settings: "slnt" 0, "wght" 700;
 }
 
+/* list styling */
 
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+
+
+ul h4 {
+    background-color: #f4f4f4;
+    border: 1px #4CC9F0 solid;
+     margin: auto;
+      margin-top: 35px;
+       margin-bottom: 35px;
+          width: 75%;
+           padding: 25px;
+            border-radius: 25px;    
+}
+
+ul h2 {
+text-decoration: none;
+margin-top: 25px;
+margin-bottom: 35px;
+
+}
+
+/* img styling */
+ 
+div img {
+        border: 3px #4CC9F0 solid;
+        border-radius: 5%;
+            box-shadow: 0px 0px 10px #858585;
+             width: 400px; 
+                transition-duration: .8s;
+                transition-timing-function: ease-out;  
+}
 
 /* footer */
 
@@ -182,3 +240,13 @@ footer nav {
 footer nav img {
     width: 100px;
 }
+
+
+/* color legend
+4CC9F0: light blue, hover + accents/shadows
+F72585: main hot pink
+4361EE: h2 blue
+F1F1F1: light grey
+8813D6: french violet
+
+*/
