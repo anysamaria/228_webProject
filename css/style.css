@@ -1,0 +1,197 @@
+
+html {
+    margin: 0px;
+     background-color: #FFFFFF;
+}
+
+* {
+padding: 0px;
+margin: 0;
+}
+
+/* header */
+header {
+    padding: 20px 35px 20px 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+            background-color: #F1F1F1;
+            box-shadow: 1px 4px 4px #E7E7E7;
+             position: sticky;
+                 top: 0;
+                    border-radius: 20px;
+            
+    }
+    
+    header h1 {
+        position: relative;
+            left: 80px;
+        color: #000000;
+        text-shadow: 2px 2px 4px #4CC9F0;
+        font-family: "yink", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+            font-size: 90px;
+                     
+    }
+
+#headerGif {
+    width: 100px;
+}
+
+header nav {
+        display: flex;
+        flex-direction: row;
+                justify-content: center;
+        gap: 18px;
+    font-family: "gelica", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+            font-size: 25px;
+}
+
+header nav a {
+ color: #F72585;
+    text-decoration: none;
+}
+
+/* transformations/animations */
+
+header nav a:hover {
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    transform: scale(1.1);
+    color:  #4361EE;
+
+}
+
+#headerColorChange {
+    animation-name: colorShift;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorShift {
+    from {
+        text-shadow: 2px 2px 4px #4CC9F0;
+    }
+    to {
+        text-shadow: 2px 2px 4px #AB48EC;
+    }
+
+}
+
+/* misc. header stuff */
+
+.headingText {
+    margin: 30px 0px 20px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+         justify-content: space-between;
+}       
+
+div h3 {
+    font-size: 22px;
+}
+
+/* body styling */
+
+body {
+    display: block;
+    margin: 50px;
+    padding: 0px;
+}
+
+/* body text styling */
+p {
+    color: #271500;
+font-family: "ivysoft-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wght" 400;
+    text-align: justify;
+    font-size: 18px;
+}
+
+section p {
+    font-size: 20px;
+}
+
+
+h1 {
+    color: #4361EE;
+        margin: 15px 0px 15px 0px;
+        font-family: "gelica", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    font-size: 60px;
+    text-align: left;
+    }
+
+h2 {
+    /* margin: 30px 0px 10px 0px; */
+    font-family: "gelica", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+            font-size: 30px;        
+    }
+
+h3 {
+    font-family: "ivysoft-variable",sans-serif;
+    font-variation-settings: 'wght' 450, 'slnt' -6;
+
+}
+
+/* body boxes */
+
+#homeBoxOne {
+    display: flex;
+     flex-direction: row;
+      padding: 20px 10px 20px 10px;
+       gap: 50px;
+        align-items: center;
+}
+
+#homeBoxTwo {
+    display: flex;
+     flex-direction: row-reverse;
+      padding: 20px 10px 20px 10px;
+       margin-bottom: 50px;
+        gap: 50px;
+         align-items: center;
+}
+
+#homeBoxOne p {
+    text-align: left;
+    padding-right: 80px;
+}
+
+#homeBoxTwo p {
+    text-align: right;
+    padding-left: 80px;
+}
+
+/* img stylings */
+
+section img {
+    width: 400px;
+     border: 2px #4361EE solid;
+      border-radius: 25px;
+       box-shadow: 1px 0px 4px #4361EE;
+}
+
+/* footer */
+footer nav {
+    margin-top: 15px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 25px;
+ }
+ 
+footer nav img {
+    width: 100px;
+}

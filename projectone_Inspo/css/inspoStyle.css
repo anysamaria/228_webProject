@@ -1,0 +1,210 @@
+
+html {
+    margin: 0px;
+     background-color: #FFFFFF;
+}
+
+* {
+padding: 0px;
+margin: 0;
+}
+
+/* header */
+header {
+padding: 20px 35px 20px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        background-color: #F1F1F1;
+        box-shadow: 1px 4px 4px #E7E7E7;
+         position: sticky;
+             top: 0;
+                border-radius: 20px;
+        
+}
+
+header h1 {
+    position: relative;
+        left: 80px;
+    color: #000000;
+    text-shadow: 2px 2px 4px #4CC9F0;
+    font-family: "yink", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        font-size: 90px;
+                 
+}
+
+#headerGif {
+    width: 100px;
+    /* padding: 20px 30px 20px 35px; */
+    /* margin: 10px 0px 0px 30px */
+}
+
+/* header nav */
+header nav {
+    /* margin-right: 25px; */
+        display: flex;
+        flex-direction: row;
+                justify-content: center;
+        gap: 18px;
+    font-family: "gelica", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+            font-size: 25px;
+}
+
+header nav a {
+ color: #F72585;
+    text-decoration: none;
+}
+
+/* transformations/animations */
+
+header nav a:hover {
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    transform: scale(1.1);
+    color:  #4361EE;
+
+}
+
+#headerColorChange {
+    animation-name: colorShift;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorShift {
+    from {
+        text-shadow: 2px 2px 4px #4CC9F0;
+    }
+    to {
+        text-shadow: 2px 2px 4px #AB48EC;
+    }
+
+}
+
+
+/* body/text styling */
+
+body {
+    display: block;
+    margin: 50px;
+    padding: 0px;
+}
+
+p {
+    color: #271500;
+font-family: "ivysoft-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wght" 400;
+    text-align: justify;
+        font-size: 18px;
+}
+
+h1 {
+color: #4361EE;
+    margin: 15px 0px 15px 20px;
+    font-family: "gelica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+font-size: 60px;
+text-align: center;
+}
+
+
+h2 {
+margin: 0px 0px 30px 0px;
+color: #4361EE;
+font-family: "gelica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        font-size: 30px;
+            text-decoration: underline;
+}
+
+h3 {
+   margin: 25px 0px 25px 0px;
+   font-family: "ivysoft-variable",sans-serif;
+   font-variation-settings: 'wght' 450, 'slnt' -6;
+        text-align: center
+    
+}
+
+
+
+p em {
+    font-family: "ivysoft-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wght" 700;
+}
+
+
+
+.headingText {
+margin: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     justify-content: space-between;
+}
+
+.headingText h3 {
+    font-size: 20px;
+}
+
+/* text box & img stylings */
+
+.textBox {
+    display: block;
+    padding: 25px 40px 25px 40px;
+}
+
+div img {
+    border: 3px #F72585 solid;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #858585;
+    width: 400px;
+    
+}
+
+.divPics {
+    margin: auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            gap: 40px;
+             justify-content: center;
+}       
+
+div img:hover {
+    border: 3px #4CC9F0 solid;
+}
+
+/* footer */
+
+footer nav {
+    margin-top: 15px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 25px;
+ }
+ 
+footer nav img {
+    width: 100px;
+}
+
+/* color legend
+4CC9F0: light blue, hover + accents/shadows
+F72585: main hot pink
+4361EE: h2 blue
+F1F1F1: light grey
+8813D6: french violet
+
+*/
