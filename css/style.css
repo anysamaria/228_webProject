@@ -203,14 +203,14 @@ section img {
 footer nav {
     margin-top: 15px;
      display: flex;
-     flex-direction: row;
+     flex-direction: row-reverse;
      align-items: center;
      justify-content: center;
-     gap: 25px;
+     gap: 35px;
  }
  
 footer nav img {
-    width: 100px;
+    width: 40px;
 }
 
 /* color legend
