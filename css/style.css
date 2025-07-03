@@ -59,7 +59,7 @@ header nav a {
     transition-timing-function: ease-out;
 }
 
-/* transformations/animations */
+/* transformations/animations/pseudos */
 
 header h1:hover {
     transform: scale(1.1);
@@ -86,6 +86,10 @@ header nav a:hover {
         text-shadow: 2px 2px 4px #AB48EC;
     }
 
+}
+
+section img:hover {
+    transform: scale(.9);
 }
 
 /* misc. header stuff */
@@ -184,6 +188,8 @@ section img {
      border: 2px #4361EE solid;
       border-radius: 25px;
        box-shadow: 1px 0px 4px #4361EE;
+        transition-duration: .5s;
+        transition-timing-function: ease-out;
 }
 
 /* footer */
@@ -199,3 +205,12 @@ footer nav {
 footer nav img {
     width: 100px;
 }
+
+/* color legend
+4CC9F0: light blue, hover + accents/shadows
+F72585: main hot pink
+4361EE: h2 blue
+F1F1F1: light grey
+8813D6: french violet
+
+*/

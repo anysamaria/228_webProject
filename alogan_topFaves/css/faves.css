@@ -21,9 +21,9 @@ header {
                  top: 0;
                     border-radius: 20px;
             
-    }
+}
     
-    header h1 {
+header h1 {
         position: relative;
             left: 80px;
         color: #000000;
@@ -32,13 +32,15 @@ header {
         font-weight: 400;
         font-style: normal;
             font-size: 90px;
-                     
-    }
+             transition-duration: 1.4s;
+             transition-timing-function: ease-out;      
+}
 
 #headerGif {
     width: 100px;
 }
 
+/* header nav */
 header nav {
         display: flex;
         flex-direction: row;
@@ -53,9 +55,15 @@ header nav {
 header nav a {
  color: #F72585;
     text-decoration: none;
+     transition-duration: .5s;
+     transition-timing-function: ease-out;
 }
 
 /* transformations/animations */
+
+header h1:hover {
+    transform: scale(1.1);
+}
 
 header nav a:hover {
     transition-duration: .5s;
@@ -63,6 +71,10 @@ header nav a:hover {
     transform: scale(1.1);
     color:  #4361EE;
 
+}
+
+div img:hover {
+    border: 3px #4CC9F0 solid;
 }
 
 #headerColorChange {
@@ -93,6 +105,10 @@ header nav a:hover {
          justify-content: space-between;
 }       
 
+.headingText h3 {
+    font-size: 20px;
+}
+
 div h3 {
     font-size: 22px;
 }
@@ -106,10 +122,63 @@ body {
 }
 
 /* body text styling */
+
+h1 {
+color: #4361EE;
+    margin: 15px 0px 15px 20px;
+        font-family: "gelica", sans-serif;
+         font-weight: 400;
+          font-style: normal;
+            font-size: 50px;
+             text-align: center;
+}
+    
+    
+h2 {
+    margin: 0px 0px 30px 0px;
+    color: #4361EE;
+    font-family: "gelica", sans-serif;
+     font-weight: 400;
+      font-style: normal;
+            font-size: 30px;
+                text-decoration: underline;
+}
+    
+h3 {
+    margin: 25px 0px 25px 0px;
+       font-family: "ivysoft-variable",sans-serif;
+        font-variation-settings: 'wght' 450, 'slnt' -6;
+            text-align: center
+        
+}
+
+
 p {
     color: #271500;
 font-family: "ivysoft-variable", sans-serif;
     font-variation-settings: "slnt" 0, "wght" 400;
     text-align: justify;
     font-size: 18px;
+}
+
+p em {
+    font-family: "ivysoft-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wght" 700;
+}
+
+
+
+/* footer */
+
+footer nav {
+    margin-top: 15px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 25px;
+ }
+ 
+footer nav img {
+    width: 100px;
 }

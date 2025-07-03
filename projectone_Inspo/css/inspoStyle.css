@@ -33,7 +33,8 @@ header h1 {
     font-weight: 400;
     font-style: normal;
         font-size: 90px;
-                 
+         transition-duration: 1.4s;
+          transition-timing-function: ease-out;
 }
 
 #headerGif {
@@ -62,7 +63,7 @@ header nav a {
       transition-timing-function: ease-out;
 }
 
-/* transformations/animations */
+/* transformations/animations/pseudos */
 
 header h1:hover {
     transform: scale(1.1);
@@ -90,6 +91,10 @@ header nav a:hover {
         text-shadow: 2px 2px 4px #AB48EC;
     }
 
+}
+
+div img:hover {
+    border: 3px #4CC9F0 solid;
 }
 
 
@@ -148,7 +153,7 @@ p em {
 
 
 .headingText {
-margin: 20px 10px 20px 10px;
+ margin: 20px 10px 20px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -167,11 +172,10 @@ margin: 20px 10px 20px 10px;
 }
 
 div img {
-    border: 3px #F72585 solid;
-    border-radius: 5%;
-    box-shadow: 0px 0px 10px #858585;
-    width: 400px;
-    
+ border: 3px #F72585 solid;
+ border-radius: 5%;
+     box-shadow: 0px 0px 10px #858585;
+      width: 400px;   
 }
 
 .divPics {
@@ -185,9 +189,6 @@ div img {
              justify-content: center;
 }       
 
-div img:hover {
-    border: 3px #4CC9F0 solid;
-}
 
 /* footer */
 
