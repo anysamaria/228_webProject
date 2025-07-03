@@ -58,13 +58,17 @@ header nav {
 header nav a {
  color: #F72585;
     text-decoration: none;
+     transition-duration: .5s;
+      transition-timing-function: ease-out;
 }
 
 /* transformations/animations */
 
+header h1:hover {
+    transform: scale(1.1);
+}
+
 header nav a:hover {
-    transition-duration: .5s;
-    transition-timing-function: ease-out;
     transform: scale(1.1);
     color:  #4361EE;
 
