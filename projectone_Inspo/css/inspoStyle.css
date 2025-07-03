@@ -35,6 +35,7 @@ header h1 {
         font-size: 90px;
          transition-duration: 1.4s;
           transition-timing-function: ease-out;
+           margin: auto;
 }
 
 #headerGif {
@@ -91,6 +92,10 @@ header nav a:hover {
         text-shadow: 2px 2px 4px #AB48EC;
     }
 
+}
+
+div h3 {
+    color: #1f01b9;
 }
 
 div img:hover {

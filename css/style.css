@@ -1,5 +1,6 @@
 html {
     margin: 0px;
+    padding: 0;
      background-color: #FFFFFF;
 }
 
@@ -10,6 +11,7 @@ margin: 0;
 
 /* header */
 header {
+ z-index: 100;
     padding: 20px 35px 20px 35px;
         display: flex;
         flex-direction: row;
@@ -34,12 +36,15 @@ header h1 {
             font-size: 90px;
              transition-duration: 1.4s;
              transition-timing-function: ease-out;
+                margin: auto;
 }
 
 
 #headerGif {
     width: 100px;
 }
+
+/* header nav */
 
 header nav {
         display: flex;
@@ -103,6 +108,7 @@ section img:hover {
 }       
 
 div h3 {
+    color: #1f01b9;
     font-size: 22px;
 }
 
@@ -134,8 +140,9 @@ h1 {
         font-family: "gelica", sans-serif;
         font-weight: 400;
         font-style: normal;
-    font-size: 60px;
-    text-align: left;
+            font-size: 60px;
+             text-align: center;
+
     }
 
 h2 {
